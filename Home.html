@@ -29,17 +29,11 @@
         }
 
         #minewalker_spotify {
-            position: absolute;
-            bottom: 250px;
-            right: 250px;
             color: #000000;
             font-size: 50px;
         }
 
         #minewalker_youtube {
-            position: absolute;
-            bottom: 160px;
-            right: 545px;
             color: #000000;
             font-size: 50px;
         }
@@ -73,14 +67,10 @@
 
         .content {
             padding: 20px;
-            position: relative; /* Adicionando posicionamento relativo */
+            text-align: center; /* Centraliza o conteúdo */
         }
 
         #img {
-            width: 500px;
-        }
-
-        #img2 {
             width: 500px;
         }
 
@@ -101,20 +91,13 @@
             border-radius: 5px;
         }
 
-        /* Adicionando estilo para os hyperlinks */
-        #minewalker_spotify,
-        #minewalker_youtube {
-            position: relative;
-            display: block;
-            text-align: center;
-            margin-top: 20px; /* Ajuste a margem conforme necessário */
-        }
-
         @media (max-width: 768px) {
-            #minewalker_spotify,
-            #minewalker_youtube {
-                position: static; /* Altera para a posição estática em dispositivos móveis */
-                margin-top: 10px; /* Ajuste a margem conforme necessário */
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Centraliza horizontalmente */
+                justify-content: center; /* Centraliza verticalmente */
+                height: 100vh; /* Define a altura para ocupar toda a altura da tela */
             }
         }
     </style>
