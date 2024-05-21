@@ -16,6 +16,11 @@
             padding: 20px;
             text-align: center;
         }
+        #preview {
+            position: absolute;
+            bottom: 150px;
+            right: 520px;
+        }
         nav {
             background-color: #bbbbbb;
             color: #fff;
@@ -50,6 +55,10 @@
             width: 100%;
             border-radius: 5px;
         }
+        audio {
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -64,14 +73,14 @@
     <a href="about.html">About</a>
 </nav>
 
-<div class="content">
-    <!-- Conteúdo da página aqui -->
-    <div id="rock" class="music-previews">
-        <div class="music-preview">
-            <img src="setup.jpg" alt="setup Preview">
-            <p>minewalker - Setup</p>
-            <a href="https://youtube.com"> click to see the preview!</a>
-        </div>
+<div id="rock" class="music-previews">
+    <div class="music-preview">
+        <img src="setup.jpg" alt="setup preview">
+        <p>minewalker - Setup</p>
+        <audio controls id="preview">
+            <source src="setup.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
     </div>
 </div>
 
