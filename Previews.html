@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Previews</title>
     <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        body,
+        header,
+        nav,
+        .content {
+            animation: fadeIn 1s ease-in-out;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #7a4d70;
         }
         header {
-            background-color: #333;
+            background-color: #330028;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -21,15 +37,21 @@
             bottom: 150px;
             right: 520px;
         }
+        #previewtext { 
+            color: #000000;
+        }
+        #previewtext { 
+            color: #000000;
+        }
         nav {
-            background-color: #bbbbbb;
+            background-color: #53003fb7;
             color: #fff;
             padding: 10px;
         }
         nav a {
             padding: 10px 20px;
             text-decoration: none;
-            color: #333;
+            color: #d6d6d6;
             border-right: 1px solid #ccc;
         }
         nav a:last-child {
@@ -59,36 +81,27 @@
             display: block;
             margin: 0 auto;
         }
-
-        /* Media query para dispositivos com largura máxima de 600px (por exemplo, dispositivos móveis) */
-        @media screen and (max-width: 600px) {
-            #preview {
-                position: relative;
-                bottom: auto;
-                right: auto;
-                margin-top: 20px; /* Ajuste a margem superior conforme necessário */
-            }
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Prévias de Músicas</h1>
+    <h1>Musics Previews</h1>
 </header>
 
 <nav>
     <a href="Home.html">Home</a>
     <a href="">Previews</a>
-    <a href="about.html">About</a>
+    <a href="About.html">About</a>
 </nav>
 
 <div id="rock" class="music-previews">
     <div class="music-preview">
-        <img src="setup.jpg" alt="setup preview">
-        <p>minewalker - Setup</p>
+        <img src="file:Imagens/Preview/setup.jpg" alt="setup preview">
+        <p id="previewtext">minewalker - Setup</p>
+        <p id="previewtext_2">30 second preview</p>
         <audio controls id="preview">
-            <source src="setup.mp3" type="audio/mpeg">
+            <source src="file:Audios/Preview_1/setup.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
     </div>
