@@ -35,20 +35,6 @@
             text-align: center;
         }
 
-        #preview {
-            position: absolute;
-            bottom: 150px;
-            right: 520px;
-        }
-
-        #previewtext { 
-            color: #000000;
-        }
-
-        #previewtext { 
-            color: #000000;
-        }
-
         nav {
             background-color: #53003fb7;
             color: #fff;
@@ -84,6 +70,9 @@
             width: 200px;
             margin: 10px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .music-preview img {
@@ -92,16 +81,12 @@
         }
 
         audio {
-            display: block;
-            margin: 0 auto;
+            margin-top: 10px; /* Ajuste a margem do topo conforme necessário */
         }
 
         @media (max-width: 768px) {
-            #preview {
-                position: static;
-                margin: 0 auto;
-                right: 100 auto;
-                bottom: auto;
+            .music-preview {
+                margin: 10px; /* Ajustando a margem para dispositivos menores */
             }
         }
     </style>
@@ -118,12 +103,12 @@
     <a href="About.html">About</a>
 </nav>
 
-<div id="rock" class="music-previews">
+<div class="music-previews">
     <div class="music-preview">
         <img src="setup.jpg" alt="setup preview">
-        <p id="previewtext">minewalker - Setup</p>
-        <p id="previewtext_2">30 second preview</p>
-        <audio controls id="preview">
+        <p>minewalker - Setup</p>
+        <p>30 second preview</p>
+        <audio controls>
             <source src="setup.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
         </audio>
