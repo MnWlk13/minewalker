@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previews</title>
+    <title>Home</title>
     <style>
         @keyframes fadeIn {
             from {
@@ -28,6 +28,22 @@
             background-color: #7a4d70;
         }
 
+        #minewalker_spotify {
+            position: absolute;
+            bottom: 250px;
+            right: 250px;
+            color: #000000;
+            font-size: 50px;
+        }
+
+        #minewalker_youtube {
+            position: absolute;
+            bottom: 160px;
+            right: 545px;
+            color: #000000;
+            font-size: 50px;
+        }
+
         header {
             background-color: #330028;
             color: #fff;
@@ -37,7 +53,6 @@
 
         nav {
             background-color: #53003fb7;
-            color: #fff;
             padding: 10px;
         }
 
@@ -60,6 +75,14 @@
             padding: 20px;
         }
 
+        #img {
+            width: 500px;
+        }
+
+        #img2 {
+            width: 500px;
+        }
+
         .music-previews {
             display: flex;
             flex-wrap: wrap;
@@ -70,51 +93,42 @@
             width: 200px;
             margin: 10px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         .music-preview img {
             width: 100%;
             border-radius: 5px;
         }
-
-        audio {
-            margin-top: 10px; /* Ajuste a margem do topo conforme necessário */
-        }
-        #Imgpreview {
-            width: 300px;
-        }
-        @media (max-width: 768px) {
-            .music-preview {
-                margin: 10px; /* Ajustando a margem para dispositivos menores */
-            }
+        @media (max-width: 768) {
+            #minewalker_spotify,
+            #minewalker_youtube {
+            position: relative;
+            display: block; /* Para ocupar a largura total disponível */
+            text-align: center; /* Centralizar o texto */
+            margin-top: 10px; /* Espaço entre a imagem e os hyperlinks */
+}
+            
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Musics Previews</h1>
+    <h1>Minewalker</h1>
 </header>
 
 <nav>
-    <a href="Home.html">Home</a>
-    <a href="">Previews</a>
+    <a href="">Home</a>
+    <a href="Previews.html">Previews</a>
     <a href="About.html">About</a>
 </nav>
 
-<div class="music-previews">
-    <div class="music-preview">
-        <img src="setup.jpg" id="Imgpreview">
-        <p>minewalker - Setup</p>
-        <p>30 second preview</p>
-        <audio controls>
-            <source src="setup.mp3" type="audio/mpeg">
-            Seu navegador não suporta o elemento de áudio.
-        </audio>
-    </div>
+<div class="content">
+    <img src="minewalker.png" id="img">
+    <p></p>
+    <a href="https://open.spotify.com/intl-pt/artist/4W0Coogax2CbvDCDbOJrUX"id="minewalker_spotify">Follow minewalker on spotify</a>
+    <p></p>
+    <a href="https://www.youtube.com/@minewalkerXD"id="minewalker_youtube">and on youtube</a>
 </div>
 
 </body>
