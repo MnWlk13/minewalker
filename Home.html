@@ -29,13 +29,22 @@
         }
 
         #minewalker_spotify {
-            color: #000000;
+            position: absolute;
+            right: 700px;
+            width: 500px;
+        }
+        #minewalker_spotifya {
+            position: absolute;
+            right: 50px;
+            top: 550px;
             font-size: 50px;
         }
-
         #minewalker_youtube {
             color: #000000;
-            font-size: 50px;
+            font-size: 40px;
+            position: absolute;
+            top: 900px;
+            right: 75px;
         }
 
         header {
@@ -73,6 +82,18 @@
         #img {
             width: 500px;
         }
+        #img2 {
+            width: 500px;
+            position: absolute;
+            right: 700px;
+            top: 1200px;
+        }
+        #img3 {
+            width: 500px;
+            position: absolute;
+            right: 700px;
+            top: 900px;
+        }
 
         .music-previews {
             display: flex;
@@ -89,6 +110,12 @@
         .music-preview img {
             width: 100%;
             border-radius: 5px;
+        }
+        #preview {
+            font-size: 50px;
+            position: absolute;
+            right: 200px;
+            top: 1220px;
         }
 
         @media (max-width: 768px) {
@@ -117,9 +144,12 @@
 <div class="content">
     <img src="minewalker.png" id="img">
     <p></p>
-    <a href="https://open.spotify.com/intl-pt/artist/4W0Coogax2CbvDCDbOJrUX" id="minewalker_spotify">Follow minewalker on spotify</a>
-    <p></p>
-    <a href="https://www.youtube.com/@minewalkerXD" id="minewalker_youtube">and on youtube</a>
+    <a href="https://open.spotify.com/intl-pt/artist/4W0Coogax2CbvDCDbOJrUX"><img src="spotify.png" id="minewalker_spotify"></a>
+    <p id="minewalker_spotifya">Follow minewalker on spotify</p>
+    <p id="preview">See the lasts previews</p>
+    <a href="Previews.html"><img src="previews.png" id="img2"></a>
+    <p id="minewalker_youtube">Subscribe to minewalker's youtube</p>
+    <a href="https://www.youtube.com/channel/UCI3s9Oay78ihb118BViYEeQ"><img src="youtube.png" id="img3"></a>
 </div>
 
 </body>
